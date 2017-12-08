@@ -6,9 +6,6 @@ Because the limitation of computation ability, only dense NN and resnet are trai
 It turns out resnet outperforms dense NN. Dense NN could only get 56% of accuracy without batch norm in CIFAR10, while resnet 
 could reach 86%, and it has only 14 conv layers. You can see the result in 'train_scratch.ipynb' and 'train_resNet2.ipynb'.
 
-It is exciting to using image classifier in robot, simply retrain the few last layers, and deploy it in the server.py.
-see https://www.youtube.com/watch?v=gszTsfhCNMg&feature=youtu.be
-
 It is interesting to visulize the weights in different conv layers. It turns out that, weights in conv layers tend to be Gaussian distribution while weights in dense layers is pretty random.
 
 See the accuracy and lost:
